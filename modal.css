@@ -1,0 +1,100 @@
+body{
+    background-image: url(half.jpg);     
+    background-size: cover;       /*배경화면의 크기를 화면에 맞춥니다.*/
+    background-repeat: no-repeat; /*사진이 바둑판 형식이 아닌 맞춤형식으로 나오게 합니다*/
+    width: 1888px;
+    height: 1700px;
+}
+.news{
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    position: relative;
+    margin: auto;                /*뉴스 폼을 가운데로 위치시킵니다.*/
+    padding: auto;
+    top: 40px;
+    opacity: 0.8;                /*폼에 투명도값을 줍니다.(최대1)*/
+}
+.newstext{
+    text-decoration: none;
+    text-align: center;         
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.newshr{
+    height: 4px;                  /*hr의 세로길이를 주고 그안에 검은색을 채워줍니다.*/
+    color: black;
+    background-color: black;
+}
+.ut{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+.update{                          
+    background-color: #707070;
+    width: 500px;
+    height: 40px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.st{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+.server{
+    background-color: #707070;
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.server:hover{
+    background-color: #505050;
+}
+.newshr3{
+    height: 4px;
+    color: black;
+    background-color: black;
+}
+.text1{
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 24px 20px;
+    cursor: pointer;           /*마우스를 올리면 커서가 바뀌도록 합니다.*/
+    font-size: 25px;
+}
+hr{
+    height: 4px;
+    background-color: black;
+}
+.footerwrap{ 
+    border-top: solid #101010;
+    border-width: 4px;
+    background: #2E2E2E; 
+    position: absolute;  
+    width:1910px; 
+    height:300px; 
+    top: 1530px;
+    left: 0px;
+}
+.text2 {
+    color: #707070;
+    font-size: 20px;
+    text-align: end;
+    margin-top: 60px;
+    margin-right: 20px;
+}
