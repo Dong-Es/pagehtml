@@ -1,0 +1,111 @@
+body{
+  background-image: url(This\ my\ world.jpg);
+  background-size: cover;       /*배경화면의 크기를 화면에 맞춥니다.*/
+  background-repeat: no-repeat; /*사진이 바둑판 형식이 아닌 맞춤형식으로 나오게 합니다*/
+  width: 1888px;
+  height: 960px;
+}
+.login-page {
+  width: 450px;
+  margin: auto;           /*폼 객체를 auto를 써서 가운데로 정렬 시켜줍니다.*/
+}
+.form {                   /*폼에 대한 CSS입니다.*/
+  position: absolute;
+  background: #FFFFFF;
+  width: 350px;
+  height: 500px;
+  padding: 50px;
+  text-align: center;     /*폼안에 쓰는 text들을 가운데로 정렬되도록 하였습니다.*/
+  top: 200px;
+}
+.form input {
+  font-family: "Roboto";  /*글꼴을  "Roboto"로 변경합니다*/
+  outline: 2;             /*input을 클릭했을때 바깥라인이 생기도록 하였습니다.*/
+  background: #505050;
+  color: #ffffff;
+  width: 320px;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px 17px;     /*padding-top : 15px*/ 
+  font-size: 14px;
+}
+.form button {
+  outline: 0;
+  width: 100%;
+  border: 0px;           /*버튼들의 바깥라인을 0px로 설정하였습니다.*/
+  margin-bottom: 2px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;       /*마우스를 올리면 커서의 모양이 바뀌도록 만들었습니다.*/
+}
+.loginbtn{
+  background-color: #303030;        /*로그인 버튼의 색깔입니다.*/
+}
+.loginbtn:hover {
+  background: #525bfa;             /*로그인 버튼위에 마우스를 올렸을때 색깔이 변합니다.*/
+}
+.naverlogin{
+  background-color: rgb(52, 207, 52); 
+}
+.naverlogin:hover{
+  background-color: rgb(103, 226, 103);
+}
+.facebooklogin{
+  background-color: rgb(40, 40, 247);
+}
+.facebooklogin:hover{
+  background-color: rgb(88, 88, 253);
+}
+.googlelogin{
+  background-color: rgb(221, 27, 66);
+}
+.googlelogin:hover{
+  background-color: rgb(233, 76, 107) ;
+}
+.applelogin{
+  color: #ffffff;
+  background-color: #000000;
+}
+.applelogin:hover{
+  background-color: #505050 ;
+}
+.joinmessage {
+  margin-top: 15px;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.joinmessage a {
+  color: #202020;
+  text-decoration: none;      /*텍스트의 밑줄을 삭제하였습니다.*/
+}
+.findmessage {
+    margin-top: 10px;          
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+.findmessage a {
+    color: #202020;
+    text-decoration: none;
+  }
+h4{
+  color: #868686;
+  margin-top: 10px;
+}
+.footerwrap{ 
+  border-top: solid #101010;
+  border-width: 15px;
+  background: #2E2E2E; 
+  position:absolute;  
+  width:1910px; 
+  height:250px; 
+  top: 880px;
+  left: 0px;
+}
+.text2 {
+  color: #707070;
+  font-size: 20px;
+  text-align: end;              /*text의 위치가 끝으로 정렬됩니다.*/
+  margin-top: 60px;             
+  margin-right: 20px;
+}
