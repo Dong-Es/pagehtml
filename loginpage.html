@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>StarReach</title>
+  <link rel="stylesheet" href="highbar.css"> <!--상단바에 사용되는 css를 불러옵니다.-->
+  <link rel="stylesheet" href="login.css">  <!--로그인 페이지에 사용되는css를 불러옵니다.-->
+  <script src="slide.js"></script>          <!--상단바에 사용하는 javascript를 불러옵니다.-->
+  <script src="highbar.js"></script>          <!--로그인 페이지에 사용하는 javascript를 불러옵니다.-->
+</head>
+
+<body>
+  <div class="wrapper">
+      <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+          <a href="Mainhome.html">
+             <button class="logobtn">StarReach</button>
+          </a>
+      </div>
+      <div id="sidebar">
+          <div class="menubtn" onclick="show()">   <!--메뉴버튼을 클릭시 사이드바를 보여줄수있도록 onclick을 추가하였습니다.-->
+          <div id="nav-icon1">                     <!--span을 이용하여 모양을 만들었습니다.-->
+          <span class="span1"></span>
+          <span class="span1"></span>
+          <span class="span1"></span>
+      </div>
+  </div>
+      <div class="list">                           <!--상단바의 슬라이드메뉴에 사용하는 리스트입니다.-->
+          <ul>
+              <li><a href="Mainhome.html">
+              <img class="highimg" src="ShalElogo1.jpg" alt="">
+              </a></li>
+              <span class="t10">StarReach</span>
+              <hr>
+              <li><a class="link1" href="GameNews">GameNews</a></li>
+              <hr>
+              <span class="t10">GameStory</span>
+              <hr>
+              <li><a class="link1" href="GameStory.html">Worldstory</a></li>
+                <li><a class="link1" href="GameStory.html">charcters</a></li> 
+              <hr>
+              <span class="t10">GoodsShop</span>
+              <hr>
+              <li><a class="link1" href="GameGoods.html">Shopping</a></li> 
+              <hr>
+              <span class="t10">HelpCenter</span>
+              <hr>
+              <li><a class="link1" href="Support.html">HelpCenter</a></li> 
+          </ul>
+      </div>
+</div>  
+  <div class="loginbtn">                   <!--로그인화면으로 넘어가는 링크입니다.-->
+      <a class="login" href="login.html">Login</a>
+  </div>
+  <div class="joinbtn">                    <!--회원가입화면으로 넘어가는 링크입니다.-->
+      <a class="join" href="signup.html">join</a>
+  </div>
+</div>
+</div>
+  <div class="login-page">
+    <div class="form">             <!--로그인 폼 입니다.-->
+      <form class="login-form">
+        <input type="text" id="Email" placeholder="E-mail" required />       <!--input안에 키보드로 입력하면 text가 출력됩니다.required를 이용해 입력을 하지않으면 경고문이 뜨게 하였습니다.-->
+        <input type="password" id="pw" placeholder="password"required />     <!--input안에 키보드로 입력하면 text 대신에 .이 출력됩니다. required를 이용해 입력을 하지않으면 경고문이 뜨게 하였습니다.-->
+        <button class="loginbtn" id="login">Login</button>
+        <p class="joinmessage">계정이 없으신가요? <a href="signup.html">회원가입</a></p> <!--<p>안에 <a href="">을 주어 한줄로 표현합니다.-->
+        <p class="findmessage">Email혹은 Password잃어버리셨나요? <a href="findIDandPW.html">ID/PW찾기</a></p> <!--<p>안에 <a href="">을 주어 한줄로 표현합니다.-->
+        <h4>---------------------or---------------------</h4>
+        <button type="button"
+          onclick="location.href='https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=profile%20email&response_type=code&client_id=919331056041-46d8sbblkb1ek3o02iva7vaiqth50clq.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Flogin.nexon.com%2Flogin%2Fgoogle%2FAccessToken&state=cI2L9kBAvjoG85d7XCo7rQpw56hVhIyUKS23St0y36Mehf6hvPo12hABbPP6sbrkGUlutkn9xaaUnM4VCx4g9w0twM3wGTWccFNQ1qlJKU~anryH0zUjBs2ibjMNLeQkkbaSm5KS48i29l0QPcOqHXhQQbx1UW&include_granted_scopes=true&access_type=offline&flowName=GeneralOAuthFlow' "
+          class="googlelogin">Google+</button> <!--Google+버튼을 누르게 되면 구글 계정으로 로그인을 하는창으로 이동하게 됩니다.-->
+        <button type="button" 
+          onclick="location.href='https://www.facebook.com/login.php?skip_api_login=1&api_key=198868903993596&kid_directed_site=0&app_id=198868903993596&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.11%2Fdialog%2Foauth%3Fscope%3Demail%26client_id%3D198868903993596%26redirect_uri%3Dhttps%253A%252F%252Flogin.nexon.com%252Flogin%252Ffacebook%252FAccessToken%26state%3DeQFOy3g7JDq0SQSdN%257EngrgH5h9zkGfoJSVCj5vDlnhlh8h0qs%257EIIdNy_ZzFCt1zGkOV8itosqUfyYuyAM7eAZJmbjVJg6OEF2A7VmWjELPRqA56YGb6bilh0Yu84mog0uFmRtkVg4Sg_1n6wFlPsAbXN5b4C7W%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D00eec201-ec08-4565-bcb5-e69244a72fc7%26shared_id%3DTODO_SHARED_ID&cancel_url=https%3A%2F%2Flogin.nexon.com%2Flogin%2Ffacebook%2FAccessToken%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DeQFOy3g7JDq0SQSdN%257EngrgH5h9zkGfoJSVCj5vDlnhlh8h0qs%257EIIdNy_ZzFCt1zGkOV8itosqUfyYuyAM7eAZJmbjVJg6OEF2A7VmWjELPRqA56YGb6bilh0Yu84mog0uFmRtkVg4Sg_1n6wFlPsAbXN5b4C7W%23_%3D_&display=page&locale=ko_KR&pl_dbl=0' "
+          class="facebooklogin">Facebook</button> <!--구글+버튼을 누르게 되면 구글 계정으로 로그인을 하는창으로 이동하게 됩니다.-->
+        <button type="button"
+          onclick="location.href='https://nid.naver.com/oauth2.0/authorize?response_type=code&svctype=0&client_id=9tEsmZTa1qdnr6eIz2yO&redirect_uri=https://login.nexon.com/login/naver/AccessToken&state=6fcpsT~iQ1mwJKEG93yNYF7X~al1eDaakMZdV8jMgz336WzGPIZzFs_lQY6M2fAy8S49AcxQqN4Y6Rqg7q6~ZpQcY_LptogqPKuOEiEyITP_F6_jO8aXQ21rMXQy9cTuUtCSeioUG3NLGHsedqQcVSd7e0dV~G' "
+          class="naverlogin">Naver</button> <!--Naver+버튼을 누르게 되면 구글 계정으로 로그인을 하는창으로 이동하게 됩니다.-->
+        <button type="button"
+          onclick="location.href='https://nid.naver.com/oauth2.0/authorize?response_type=code&svctype=0&client_id=9tEsmZTa1qdnr6eIz2yO&redirect_uri=https://login.nexon.com/login/naver/AccessToken&state=6fcpsT~iQ1mwJKEG93yNYF7X~al1eDaakMZdV8jMgz336WzGPIZzFs_lQY6M2fAy8S49AcxQqN4Y6Rqg7q6~ZpQcY_LptogqPKuOEiEyITP_F6_jO8aXQ21rMXQy9cTuUtCSeioUG3NLGHsedqQcVSd7e0dV~G' "
+          class="applelogin">Apple</button> <!--Apple+버튼을 누르게 되면 구글 계정으로 로그인을 하는창으로 이동하게 됩니다.-->
+      </form>
+    </div>
+  </div>
+  <footer class="footerwrap">    <!--하단바에 회사에 대한 정보를 추가하는 명령어입니다.-->
+    <h2 class="text2">(주) 별빛이닿을때 대표이사 : 임동균 <br>
+      주소 : 천안시 서북구 두정동 1457 <br>
+      E-Mail : abrerop@naver.com <br>
+      전화번호 : 010-4148-5136 <br>
+      일러스트레이더 : ShalE <br>
+      -Made by LDG-
+    </h2>
+  </footer>
+</body>
+
+</html>
