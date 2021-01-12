@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FindID/PW</title>
+    <link rel="stylesheet" href="find.css">      <!--찾기페이지에 사용되는 css를 불러옵니다.-->
+    <link rel="stylesheet" href="highbar.css">   <!--상단바에 사용되는 css를 불러옵니다.-->
+    <script src="highbar.js"></script>       <!--상단바에 사용되는 javascript를 불러옵니다.-->
+    <script src="findidpw.js"></script>      <!--찾기 페이지에 사용되는 javascript를 불러옵니다.-->
+</head>
+<body>
+    <div class="wrapper"> 
+        <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+            <a href="Mainhome.html">
+               <button class="logobtn">StarReach</button>
+            </a>
+        </div>
+        <div id="sidebar">
+            <div class="menubtn" onclick="show()">   
+<!--메뉴버튼을 클릭시 사이드바를 보여줄수있도록 onclick을 추가하였습니다.-->
+            <div id="nav-icon1">                   <!--span을 이용하여 모양을 만들었습니다.-->
+            <span class="span1"></span>
+            <span class="span1"></span>
+            <span class="span1"></span>
+        </div>
+    </div>
+        <div class="list">                <!--상단바의 슬라이드메뉴에 사용하는 리스트입니다.-->
+            <ul>
+                <li><a href="Mainhome.html">
+                <img class="highimg" src="ShalElogo1.jpg" alt="">
+                </a></li>
+                <span class="t10">StarReach</span>
+                <hr>
+                <li><a class="link1" href="GameNews">GameNews</a></li>
+                <hr>
+                <span class="t10">GameStory</span>
+                <hr>
+                <li><a class="link1" href="GameStory.html">Worldstory</a></li>
+                <li><a class="link1" href="GameStory.html">charcters</a></li> 
+                <hr>
+                <span class="t10">GoodsShop</span>
+                <hr>
+                <li><a class="link1" href="GameGoods.html">Shopping</a></li> 
+                <hr>
+                <span class="t10">HelpCenter</span>
+                <hr>
+                <li><a class="link1" href="Support.html">HelpCenter</a></li> 
+            </ul>
+        </div>
+  </div>  
+    <div class="loginbtn">            <!--로그인화면으로 넘어가는 링크입니다.-->
+        <a class="login" href="login.html">Login</a>
+    </div>
+    <div class="joinbtn">            <!--회원가입화면으로 넘어가는 링크입니다.-->
+        <a class="join" href="signup.html">join</a>
+    </div>
+</div>
+</div>
+<!--div class=“wrapper”부터 여기까지가 highbar입니다.-->
+ <form class="findEmail"> <!--Email를 찾는 폼을 생성하였습니다.-->
+     <p class="emailtext">E-Mail찾기</p>
+     <hr class="hr2"> <!--hr에 클라스를 주어 활용하였습니다.-->
+     <input class="finde" type="text" placeholder="Name" required> 
+     <!--input안에 키보드로 입력하면 text가 출력됩니다.required를 이용해 입력을 하지않으면 
+경고문이 뜨게 하였습니다.-->
+     <input class="findc" type="password" placeholder="Cellphone" required>   
+     <!--input안에 키보드로 입력하면 text 대신에 .이 출력됩니다. required를 이용해 입력을 하지않으면 경고문이 뜨게 하였습니다.-->
+     <button class="emailfindbtn" onclick="javascript:btn1()">찾기</button>
+ </form>
+ <form class="findpassword">
+     <!--Password를 찾는 폼을 생성하였습니다.-->
+    <p class="emailtext">Password찾기</p>
+    <hr class="hr2">  <!--hr에 클라스를 주어 활용하였습니다.-->
+    <input class="findp" type="text" placeholder="Name" required>  
+    <!--input안에 키보드로 입력하면 text가 출력됩니다.required를 이용해 입력을 하지않으면 
+경고문이 뜨게 하였습니다.-->
+    <input class="finda" type="text" placeholder="E-Mail" required>   
+    <!--input안에 키보드로 입력하면 text가 출력됩니다.required를 이용해 입력을 하지않으면 
+경고문이 뜨게 하였습니다.-->
+    <input class="findw" type="password" placeholder="Cellphone" required>   
+    <!--input안에 키보드로 입력하면 text 대신에 .이 출력됩니다. required를 이용해 입력을 
+하지 않으면 경고문이 뜨게 하였습니다.-->
+    <button class="emailfindbtn" onclick="javascript:btn2()">찾기</button>
+</form>
+<footer class="footerwrap"> <!--하단바는 회사 정보를 알려줍니다.-->
+    <h2 class="text2">(주) 별빛이닿을때 대표이사 : 임동균 <br>
+    주소 : 천안시 서북구 두정동 1457 <br>
+    E-Mail : abrerop@naver.com <br>
+    전화번호 :  010-4148-5136 <br>
+    일러스트레이더 : ShalE <br>
+    -Made by LDG-
+    </h2>
+  </footer>
+</body>
+</html>
