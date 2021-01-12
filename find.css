@@ -1,0 +1,116 @@
+body{
+    background-image: url(비즐라.jpg);
+    background-size: cover;       /*배경화면의 크기를 화면에 맞춥니다.*/
+    background-repeat: no-repeat; /*사진이 바둑판 형식이 아닌 맞춤형식으로 나오게 합니다*/
+    width: 1888px;
+    height: 960px;
+  }
+  
+.findEmail{
+    width: 600px;
+    height: 450px;
+    background-color: #ffffff;
+    opacity: 0.9;                /*폼의 투명도를 조절하였습니다*/
+    position: absolute;          /*절대적위치를 주어서 top과left로 위치를 조절하였습니다.*/
+    top: 320px;
+    left: 148px;
+    text-align: center;
+}
+.emailtext{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+}
+.hr2{
+    margin-top: -40px;          /*hr을 기존에 위치보다 40px위로 올립니다.*/
+}
+.finde{
+    width: 500px;
+    font-size: 30px;
+    margin: 24px 20px;          /*top bottom : 24px 그리고 left right :20px*/
+    padding: 16px 24px;         /*padding 값을 top bottom : 16px 그리고 left right :24px*/
+    font-weight: bolder;        /*폰트의 사이즈 두께를 정합니다.*/
+}
+.findc{
+    width: 500px;
+    font-size: 30px;
+    margin: 20px 20px;         /*top bottom : 20px 그리고 left right :20px*/
+    padding: 16px 24px;        /*padding 값을 top bottom : 16px 그리고 left right :24px*/
+    font-weight: bolder;       /*폰트의 사이즈 두께를 정합니다.*/
+}
+.emailfindbtn{
+    width: 500px;
+    padding: 16px 24px;
+    margin: 20px 20px;
+    background-color: #101010;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.emailfindbtn:hover{             /*마우스를 올리면 버튼의 색깔이 변합니다.*/
+    background-color: #505050;
+}
+.findpassword{
+    width: 600px;
+    height: 450px;
+    background-color: #ffffff;
+    opacity: 0.9;                /*폼의 투명도를 조절하였습니다*/
+    position: absolute;          /*절대적위치를 주어서 top과left로 위치를 조절하였습니다.*/
+    top: 320px;
+    left: 1138px;
+    text-align: center;
+}           
+.emailtext{
+    text-align: center;           
+    font-size: 50px;
+    margin-top: 10px;
+}
+.findp{
+    width: 500px;
+    font-size: 20px;
+    margin: 9px 20px;
+    padding: 16px 24px;
+    font-weight: bolder;
+}
+.finda{
+    width: 500px;
+    font-size: 20px;
+    margin: 9px 20px;
+    padding: 16px 24px;
+    font-weight: bolder;
+}
+.findw{
+    width: 500px;
+    font-size: 20px;
+    margin: 9px 20px;
+    padding: 16px 24px;
+    font-weight: bolder;
+
+}
+.emailfindbtn{
+    width: 500px;
+    background-color: #000000;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.emailfindbtn:hover{             /*마우스를 올리면 버튼의 색깔이 변합니다.*/
+    background-color: #505050;
+}
+.footerwrap{ 
+    border-top: solid #101010;
+    border-width: 2px;     
+    background: #2E2E2E; 
+    position:absolute;  
+    width:1910px; 
+    height:250px; 
+    top: 950px;
+    left: 0px;
+}
+.text2 {
+    color: #707070;
+    font-size: 20px;
+    text-align: end;          /*text를  끝에 정렬시킵니다.*/
+    margin-top: 60px;
+    margin-right: 20px;
+}
