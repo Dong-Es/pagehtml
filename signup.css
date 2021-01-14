@@ -1,0 +1,68 @@
+body{
+  background-image: url(This\ my\ world.jpg);
+  background-size: cover;       /*배경화면의 크기를 화면에 맞춥니다.*/
+  background-repeat: no-repeat; /*사진이 바둑판 형식이 아닌 맞춤형식으로 나오게 합니다*/
+  width: 1888px;
+  height: 960px;
+}
+
+.form {
+  position: relative;
+  background: #FFFFFF;
+  width: 400px;
+  height: 500px;
+  margin:auto ;               /*auto를 사용하여 폼을 가운데로 정렬시킵니다.*/
+  padding: 50px;
+  text-align: center;
+  top: 90px;                  /*top가 90px 떨어뜨렸습니다.*/
+}
+
+.main-text {
+  font-weight: 100;
+  color: #333;
+}
+
+.form input {
+  font-family: "Roboto";    /*글꼴을 "roboto"을 주었습니다.*/
+  background: #f2f2f2;
+  width: 380px;
+  border: 20px;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-size: 14px;;
+}
+
+.form button {
+  font-family: "Roboto";    /*글꼴을 "roboto"을 주었습니다.*/
+  background: #303030;
+  width: 300px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;          /*마우스 커서를 올리면 커서 모양이 바뀝니다.*/
+}
+.form button:hover {        /*버튼에 마우스를 올라면 색깔이 변합니다.*/
+  background: #525bfa;
+}
+.form .message a {     
+  color: #101010;
+  text-decoration: none;
+}
+.footerwrap{ 
+  border-top:  solid #101010;
+  border-width: 15px;
+  background: #2E2E2E; 
+  position:absolute;  
+  width:1910px; 
+  height:250px; 
+  top: 900px;
+  left: 0px;
+}
+.text2 {
+  color: #707070;
+  font-size: 20px;
+  text-align: end;      
+  margin-top: 60px;
+  margin-right: 20px;
+}
