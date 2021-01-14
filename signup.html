@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="highbar.css"> <!--상단바의 css파일을 불러옵니다.-->
+    <link rel="stylesheet" href="signup.css"> <!--signup의 css파일을 불러옵니다.-->
+    <script src="highbar.js"></script>          <!--slide의 js파일을 불러옵니다.-->
+    <script src="signup.js"></script>
+</head>
+<body>
+    <div class="wrapper">  
+        <div class="logo">
+            <a href="Mainhome.html">
+               <button class="logobtn">StarReach</button>
+            </a>
+        </div>
+        <div id="sidebar">
+            <div class="menubtn" onclick="show()"> <!--menubtn의 클릭하면 sidebar가 보여줍니다.-->
+            <div id="nav-icon1">                   <!--<span>으로 메뉴이모티콘을 만들었습니다.-->
+            <span class="span1"></span>
+            <span class="span1"></span>
+            <span class="span1"></span>
+    </div>
+    </div>
+    <div class="list">                            <!--sidebar안에 들어가는 리스트입니다.-->
+        <ul>
+            <li><a href="Mainhome.html">
+                <img class="highimg" src="ShalElogo1.jpg" alt="">
+            </a></li>
+            <span class="t10">StarReach</span>
+            <hr>
+            <li><a class="link1" href="GameNews">GameNews</a></li>
+            <hr>
+            <span class="t10">GameStory</span>
+            <hr>
+            <li><a class="link1" href="GameStory.html">Worldstory</a></li>
+            <li><a class="link1" href="GameStory.html">charcters</a></li>  
+            <hr>
+            <span class="t10">GoodsShop</span>
+            <hr>
+            <li><a class="link1" href="GameGoods.html">Shopping</a></li> 
+            <hr>
+            <span class="t10">HelpCenter</span>
+            <hr>
+            <li><a class="link1" href="Support.html">HelpCenter</a></li> 
+        </ul>
+    </div>
+    </div>
+    <div class="loginbtn">
+        <a class="login" href="login.html">Login</a>
+    </div>
+    <div class="loginbtn">
+        <a class="join" href="signup.html">join</a>
+    </div>
+    </div>
+    </div>
+<div class="container">
+    <div class="form">  <!--회원가입 폼을 생성하였습니다.-->
+      <h2 class="main-text">회원가입</h2>     
+      <form class="register-form">
+        <input type="text" placeholder="email address"><!--input안에 키보드로 입력하면 text가 출력됩니다. required값을 주었기 때문에 입력을 하지 않으면 input 아래 경고가 생깁니다.-->
+        <input type="first_name" placeholder="name" required> <!--input안에 키보드로 입력하면 text가 출력됩니다. required값을 주었기 때문에 입력을 하지 않으면 input 아래 경고가 생깁니다.-->
+        <input type="last_name" placeholder="cellphone" required> <!--input안에 키보드로 입력하면 text 대신에 .이 출력됩니다. required값을 주었기 때문에 
+            입력을 하지 않으면 input 아래 경고가 생깁니다.-->
+        <input type="password" placeholder="password" required><!--input안에 키보드로 입력하면 text 대신에 .이 출력됩니다. required값을 주었기 때문에 
+            입력을 하지 않으면 input 아래 경고가 생깁니다.-->
+        <input type="password" placeholder="confirm password" required><!--input안에 키보드로 입력하면 text 대신에 .이 출력됩니다. required값을 주었기 때문에 
+            입력을 하지 않으면 input 아래 경고가 생깁니다.-->
+        <button class="btn" onclick="javascript:btn()">회원가입</button>
+        <p class="message">이미 회원가입을 했다. <a href="login.html">Login</a></p>
+      </form>  
+    </div>
+  </div>
+  <footer class="footerwrap"> <!--하단바는 회사 정보를 알려줍니다.-->
+    <h2 class="text2">(주) 별빛이닿을때 대표이사 : 임동균 <br>
+    주소 : 천안시 서북구 두정동 1457 <br>
+    E-Mail : abrerop@naver.com <br>
+    전화번호 :  010-4148-5136 <br>
+    일러스트레이더 : ShalE <br>
+    -Made by LDG-
+    </h2>
+  </footer>
+</body>
+</html>
