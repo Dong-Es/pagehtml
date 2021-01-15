@@ -1,0 +1,110 @@
+body{
+    width: 1888px;
+    height: 1300px;
+    background-color: black;
+    background-image: url("Star.jpg");
+    background-size: cover;       /*배경화면의 크기를 화면에 맞춥니다.*/
+    background-repeat: no-repeat; /*사진이 바둑판 형식이 아닌 맞춤형식으로 나오게 합니다*/
+}
+.help{                 
+  width: 800px;
+  height: 1000px;
+  background-color: #000000;
+  position: relative;
+  opacity: 0.9;          /*투명도를 추가하였습니다.*/
+  margin: auto;          /*폼의 위치를 가운데로 옮겼습니다.*/
+  top: 50px;
+  font-family: "Roboto";  /*글꼴을  "Roboto"로 변경합니다*/
+}
+.one{
+ font-weight: bolder;      /*콤보박스안에 리스트 글들은 bolder값이 입력되어 나옵니다.*/
+ color: white;
+ font-size: 30px;
+ text-align: center;
+}
+.two{
+  font-weight: bolder;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.mainlist{
+  width: 700px;
+  height: 60px;
+  padding: 15px;            /*padding 사면에 15px값을 입력하였습니다.*/
+  font-size: 20px;
+  font-weight: bolder;      /*콤보박스안에 리스트 글들은 bolder값이 입력되어 나옵니다.*/
+  margin-left: 50px;
+}
+.sublist{
+  width: 700px;
+  height: 60px;
+  padding: 15px;            /*padding 사면에 15px값을 입력하였습니다.*/
+  font-size: 20px;
+  font-weight: bolder;      /*콤보박스안에 리스트 글들은 bolder값이 입력되어 나옵니다.*/
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.jemok{
+  width: 692px;
+  height: 60px;
+  font-size: 20px;
+  position: relative;
+  left: 50px;
+  margin-top: 10px;
+}
+.checktext{
+  position: relative;
+  font-size: 10px;
+  color: white;
+  left: 50px;
+}
+.chkbox{
+  position: absolute;
+  top: 365px;
+  width: 50px;
+  height: 50px;
+  right: 100px;
+}
+.helparea{
+  resize: none;  /*textarea에 크기조절을 못하게 만들었습니다.*/
+  width: 668px;
+  height: 450px;
+  font-size: 15px;
+  font-weight: bolder; 
+  /*안에 써지는 글씨 혹은placeholder의 글씨의 두께는 bloder값으로 나옵니다.*/
+  padding: 15px;
+  position: relative;
+  left: 50px;
+  top: -10px;    /*기존의 위치보다 10px위로 올렸습니다.*/
+}
+.sendbtn{                         
+  left: 110px;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #606060;
+  width: 200px;
+  height: 50px;
+  position: relative;              
+  left: 300px;                      /*위치값을 주었습니다.*/
+}
+.sendbtn:hover{                   /*마우스를 올리면 배경색이 변합니다.*/
+  background-color: black;
+}
+.footerwrap{ 
+    border-top: solid #101010;
+    border-width: 15px;
+    background: #2E2E2E; 
+    position:absolute;  
+    width:1903px; 
+    height:250px; 
+    top: 1300px;
+    left: 0px;
+  }
+  .text2 {
+    color: #707070;
+    font-size: 20px;
+    text-align: end;
+    margin-top: 60px;
+    margin-right: 20px;
+  }
