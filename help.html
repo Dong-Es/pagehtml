@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HelpCenter</title>
+    <link rel="stylesheet" href="highbar.css">       <!--상단바의 사용하는 css를 불러옵니다.-->
+    <link rel="stylesheet" href="helpcenter.css">    <!--헬프센터에 사용하는 css를 불러옵니다.-->
+    <script src="highbar.js"></script>               <!--상단바에 사용하는 javscript를 불러옵니다.-->
+    <script src="helpcenter.js"></script>            <!--헬프센터에 사용되는 javscript를 불러옵니다.-->
+</head>
+<body>
+    <body>
+        <div class="wrapper">
+            <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+                <a href="Mainhome.html">
+                   <button class="logobtn">StarReach</button>
+                </a>
+            </div>
+            <div id="sidebar">
+                <div class="menubtn" onclick="show()">   <!--메뉴버튼을 클릭시 사이드바를 보여줄수있도록 onclick을 추가하였습니다.-->
+                <div id="nav-icon1">                     <!--span을 이용하여 모양을 만들었습니다.-->
+                <span class="span1"></span>
+                <span class="span1"></span>
+                <span class="span1"></span>
+            </div>
+        </div>
+            <div class="list">                           <!--상단바의 슬라이드메뉴에 사용하는 리스트입니다.-->
+                <ul>
+                    <li><a href="Mainhome.html">
+                    <img class="highimg" src="ShalElogo1.jpg" alt="">
+                    </a></li>
+                    <span class="t10">StarReach</span>
+                    <hr>
+                    <li><a class="link1" href="GameNews">GameNews</a></li>
+                    <hr>
+                    <span class="t10">GameStory</span>
+                    <hr>
+                    <li><a class="link1" href="GameStory.html">Worldstory</a></li>
+                    <li><a class="link1" href="GameStory.html">charcters</a></li>
+                    <hr>
+                    <span class="t10">GoodsShop</span>
+                    <hr>
+                    <li><a class="link1" href="GameGoods.html">Shopping</a></li> 
+                    <hr>
+                    <span class="t10">HelpCenter</span>
+                    <hr>
+                    <li><a class="link1" href="Support.html">HelpCenter</a></li> 
+                </ul>
+            </div>
+      </div>  
+        <div class="loginbtn">                   <!--로그인화면으로 넘어가는 링크입니다.-->
+            <a class="login" href="login.html">Login</a>
+        </div>
+        <div class="joinbtn">                    <!--회원가입화면으로 넘어가는 링크입니다.-->
+            <a class="join" href="signup.html">join</a>
+        </div>
+    </div>
+    </div>
+<form class="help">
+    <p class="one">고객센터</p>
+    <p class="two">정확한 사실만을 기재해주세요</p>
+    <select id="mainlist" class="mainlist" onchange="setbtvalue" >
+        <option value="none" checked>=== 선택 ===</option> <!--윈도우를 실행되면 선택이되도록 체크-->
+        <option value="game">1. 게임문의</option>
+        <option value="money">2. 결제문의</option>
+        <option value="etc">3. 기타문의</option>
+      </select>
+      <select id="sublist" class="sublist" onchange="setbtvalue" >
+        <option value="none" checked>=== 선택 ===</option> <!--윈도우를 실행되면 선택이되도록 체크-->
+        <option value="story">1. 스토리 관련</option>
+        <option value="lie">2. 사기신고</option>
+        <option value="helpmes">3. 건의사항</option>
+        <option value="subetc">4. 기타문의</option>
+      </select>
+      <input class="jemok" type="text" placeholder="제목을 입력하세요.">
+      <pre class="checktext">
+          고객센터 유저 유의사항
+          1.욕설, 성희롱, 인권 침해시 원활한 문의가 이루어 질 수 없습니다.
+          2.정확한 사실만을 기재해주시길바랍니다.
+          3.답변시 회원가입한 이메일로 보내집니다.
+          4.보내주신 내용은 빠르게 확인하고 정확한 답변을 하도록 노력하겠습니다.
+          5.확인하셨다면 체크표시를 해주세요
+      </pre>
+      <input type="checkbox" class="chkbox" name="checktext" id="chk">
+      <textarea class="helparea" name="helparea" cols="20" rows="5" id="helparea" placeholder="*문의 접수시 아래 pc사양을 적어주시길 바랍니다.
+*전화문의는 010-123-4567로 연락주시길 바랍니다."></textarea>
+      <button class="sendbtn" id="sendbtn" onclick="javascript:btn()">보내기</button>
+</form>
+<footer class="footerwrap">
+    <h2 class="text2">(주) 별빛이닿을때 대표이사 : 임동균 <br>
+    주소 : 천안시 서북구 두정동 1457 <br>
+    E-Mail : abrerop@naver.com <br>
+    전화번호 :  010-4148-5136 <br>
+    일러스트레이더 : ShalE <br>
+    -Made by LDG-
+    </h2>
+  </footer>
+</body>
+</html>
