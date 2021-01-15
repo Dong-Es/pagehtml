@@ -1,0 +1,158 @@
+.wrapper{
+  width: 1888px;   /*가로길이는 1888px입니다*/
+  height: 100px;  /*세로길이는 100px입니다*/
+  background-color: #ffffff;
+  color: #fff;
+}
+.t1{
+  color: white;
+}
+ .logobtn{
+   height: 89px;
+   width: 289px;
+   position: absolute;
+   background-color: #ffffff;   
+   border: none;
+   color: rgb(0, 0, 0);
+   font-size: 35px;
+   left: 800px;
+   cursor: pointer;  /*마우스 커서 변하도록 하였습니다.*/
+   margin-top: 5px;
+ }
+ .logobtn:before{
+   position: absolute;
+   content: '';     /*가상요소를 사용하고있습니다.*/
+   height: 0;
+   width: 0;
+   bottom: 0;
+   left: 0;
+ }
+ .logobtn:after{
+   position: absolute;
+   content: '';      /*가상요소를 사용하고있습니다.*/
+   height: 0;
+   width: 0;
+   top: 0;
+   right: 0;
+ }
+ .logobtn:hover{
+  color:#401be6;
+ }
+ .logobtn:hover:before{
+   height: 89px;
+   width: 287px;
+   border: 3px solid #401be6;
+   border-right: none;
+   border-bottom: none;
+   transition: height 0.5s linear, 
+               width 0.5s linear 0.5s;
+   /*border-right와 border-bottom을 마우스 버튼이 올라가기전에는 none이지만 
+   transtition height 0.5s linear width 0.5s linear 0.5를 주어서 마우스를 올리면 
+   테두리가 생기도록 하였습니다*/
+ }
+ .logobtn:hover:after{
+   height: 89px;
+   width: 287px;
+   border: 3px solid #401be6;
+   border-left: none;
+   border-top: none;
+   transition: height 0.5s linear, 
+               width 0.5s linear 0.5s;
+ /*border-left와 border-top을 마우스 버튼이 올라가기전에는 none이지만 
+   transtition height 0.5s linear width 0.5s linear 0.5를 주어서 마우스를 올리면 
+   테두리가 생기도록 하였습니다*/
+ }
+
+/* 위에는 로그의 애니메이션 효과 css*/
+#sidebar{
+  position: absolute;
+  width: 300px;
+  height: 120%;
+  background-color: #050505;
+  left: -300px;   /*left : -300값을 주어 클릭을 하지 않으면 페이지에 보이지 않도록하였습니다.*/
+  transition: 0.3s; /*클릭을 하면 0.3초만에 나오도록 값을 주었습니다.*/
+  z-index: 1;      
+}
+#sidebar.active{
+  left: 0;
+}
+#sidebar ul li{
+  list-style:none ; /*리스트의 동그라미를 삭제 하였습니다.*/
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}
+#sidebar .menubtn{        /*span으로 만든 메뉴 버튼입니다.*/
+  position: absolute;
+  top: 30px;      
+  left: 330px;
+}
+.menubtn span{               /*span으로 만든 메뉴 버튼입니다.*/
+  width: 45px;
+  height: 4px;
+  background: #000000;
+  display: block;
+  margin-top: 10px;
+}
+.span1:hover{
+  background-color: #505050;
+}
+.highimg{
+  width: 220px;
+  height: 150px;
+  border: solid white 1px;
+  margin: auto;          /*이미지를 가운데로 정렬하였습니다.*/
+}
+.t10{
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid white; /*나눔을 표기하기 위해 아래에 1px의 선을 두었습니다.*/
+}
+.link1{
+  position: relative;
+  text-decoration: none;
+  color: white;  
+  width: 100px;
+  height: 100px;
+}
+.link1:hover{
+  color: #401be6;
+  background-color: black;
+}
+/* 위에는 사이드 메뉴바의 css*/
+
+.login{
+  position: absolute;
+  color: #000000;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: right;
+  margin-top: 25px;
+  right: 30px;
+  border: solid 2px #000000;
+  border-radius: 15px;           /*직각이 아닌 원형모양으로 만들수 있도록 값을 주엇습니다*/
+  display: block;
+  padding: 7px 16px;
+}
+.join{
+  position: absolute;
+  color: #000000;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: right;
+  right: 200px;
+  margin-top: 25px;
+  border: solid 2px #000000;
+  border-radius: 15px;            /*직각이 아닌 원형모양으로 만들수 있도록 값을 주엇습니다*/
+  display: block;
+  padding: 7px 16px;
+}
+.login:hover{
+  color: #401be6;
+  border: solid 2px #401be6;
+}
+.join:hover{
+  color:#401be6;
+  border: solid 2px #401be6;
+}
