@@ -1,0 +1,123 @@
+body{
+    background-image: url(StarReach.jpg);     
+    background-size: cover;       /*배경화면의 크기를 화면에 맞춥니다.*/
+    background-repeat: no-repeat; /*사진이 바둑판 형식이 아닌 맞춤형식으로 나오게 합니다*/
+    background-position: center;  /*사진을 가운데로 정렬시킵니다.*/
+    width: 1888px;
+    height: 1000px;
+}
+.goodsshop{
+    width: 1700px;
+    height: 800px;
+    background-color: white;
+    margin: auto;       /*폼객체를 가운데로 위치했습니다.*/
+    margin-top: 65px;
+    opacity: 0.9;       /*투명도 값을 주었습니다. 90%*/
+}
+.gsimg1 img{
+    position: absolute;
+    left: 150px;
+    top: 250px;
+    width: 340px;
+    height: 450px;
+}
+.gstext1{
+    width: 340px;   
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    top: 650px;
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.gsimg2 img{
+    position: absolute;
+    left: 580px;
+    top: 250px;
+    width: 340px;
+    height: 450px;
+}
+.gstext2{
+    width: 340px;   
+    height: 100px;
+    position: absolute;
+    left: 580px;
+    top: 650px;
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.gsimg3 img{
+    position: absolute;
+    left: 1000px;
+    top: 250px;
+    width: 340px;
+    height: 450px;
+}
+.gstext3{
+    width: 340px;   
+    height: 100px;
+    position: absolute;
+    left: 1000px;
+    top: 650px;
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.gsimg4 img{
+    position: absolute;
+    left: 1420px;
+    top: 250px;
+    width: 340px;
+    height: 450px;
+}
+.gstext4{
+    width: 340px;   
+    height: 100px;
+    position: absolute;
+    left: 1420px;
+    top: 650px;
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.pulst{
+    position: absolute;
+    top: 730px;
+    left: 80px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #101010;
+}
+.fanding{
+    position: absolute;
+    top: 850px;
+    left: 150px;
+    width: 1620px;
+    height: 110px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.footerwrap{ 
+    border-top: solid #101010;
+    border-width: 4px;
+    background: #2E2E2E; 
+    position: absolute;  
+    width:1903px; 
+    height:250px; 
+    top: 1030px;
+    left: 0px;
+}
+.text2 {
+    color: #707070;
+    font-size: 20px;
+    text-align: end;
+    margin-top: 60px;
+    margin-right: 20px;
+}
