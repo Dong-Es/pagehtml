@@ -1,0 +1,474 @@
+body{
+    font-family: "Roboto";       /*body에 들어가는 글꼴은 "Roboto"로 변형합니다. */
+    background-color: #000000;
+    width:1888px; 
+    height:100%;
+}
+.slides{
+    padding: 2px;                  /*4면이 2px입니다*/
+    width: 1500px;                 
+    height: 620px;
+    display: block;
+    margin: auto;                  /*슬라이드를 중앙으로 위치 시킵니다.*/
+    position: relative;
+}
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    width: 1500px;
+    height: 620px;
+    display: block;
+    position: absolute;
+    transform: scale(0);                      /*이미지 확대는 없습니다.*/
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.nav label {
+    width: 200px;
+    height: 100%;                                /*슬라이드 세로의 길이 100%*/
+    display: none;
+    position: absolute;
+    opacity: 0;                                  /*투명도 100%*/
+    cursor: pointer; 
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.nav label:hover { 
+    opacity: 1;              /*마우스를 올리면 색깔이 나오고 화살표가 등잡합니다. 투명도 0%로 출력됩니다.*/
+}
+.nav .next {
+     right: 0;               /*왼쪽으로 넘깁니다.*/
+}
+input:checked + .slide-container  .slide {
+    opacity: 1 ;              /*이미지의 투명도 0*/
+    transform: scale(1);     /*이미지의 크기 1배 0으로 하면 안보이고 1보다 크면 이미지가 커집니다.*/
+}
+input:checked +.slide-container .nav label {
+     display: block;          /*요소를 렌더링 하지 않도록 설정합니다.*/
+}
+.nav-dots {
+width: 100%;
+bottom: 9px;
+height: 11px;
+display: block;               /*요소를 렌더링 하지 않도록 설정합니다.*/
+position: absolute;
+text-align: center;
+}
+.nav-dots .nav-dot {
+top: -5px;                            /*기존의 위치보다 5px위로 올렸습니다.*/
+width: 11px;
+height: 11px;
+margin: 0 4px;                        /*margin topandbottom : 0px leftandright :4px를 주었습니다*/
+position: relative;
+border-radius: 100%;                  /*nav-dot와 nav-dots를 동그라미로 만들었습니다.*/
+display: inline-block;
+background-color: #fff;
+}
+.nav-dots .nav-dot:hover {
+cursor: pointer;                      /*마우스를 올리면 커서가 바뀝니다.*/
+background-color: #303030;
+}
+/*아래부터는 메뉴바*/
+.Menubar{
+    position: absolute;
+    background-color: #ffffff;
+    margin: 10px 194px;         /*margin topandbottom : 10px leftandright :194px를 주었습니다*/
+    height: 50px;
+    width: 1500px;
+    text-align: center;
+}
+.Menubar ul{
+    margin: 0;
+    padding: 3px 50px;           /*padding topandbottom : 3px leftandright :50px를 주었습니다*/
+    font-size: 30px;
+    font-weight: bolder;
+}
+.Menubar ul li{
+    display: inline-block;
+    padding: 0px 100px;           /*padding topandbottom : 0px leftandright :100px를 주었습니다*/
+    margin-left: 10px;
+}
+.Menubar ul li a{
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}
+.Menubar ul li a:hover{
+    color: #000000;
+}
+.loginpod{
+    position: absolute;
+    background-color: #d4d4d4;
+    margin: 70px 194px;           /*margin topandbottom : 70px leftandright :194px를 주었습니다*/
+    padding: 15px 0px;            /*padding topandbottom : 15px leftandright :0px를 주었습니다*/
+    width: 500px;
+    height: 350px;
+}
+.logina{
+    background: #f2f2f2;
+    width: 400px;
+    border: 0;
+    margin: 5px 33px;             /*margin topandbottom : 5px leftandright :33px를 주었습니다*/
+    padding: 15px 20px;           /*padding topandbottom : 15px leftandright :20px를 주었습니다*/
+    font-size: 20px;
+    top: 16px;
+}
+.mainlogin{
+    outline: 0;
+    border: 0;
+    margin: 5px 33px;             /*margin topandbottom : 5px leftandright :33px를 주었습니다*/
+    padding: 20px 193px;          /*padding topandbottom : 20px leftandright :193px를 주었습니다*/
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #303030;
+    font-weight: bolder;
+  }
+.mainlogin:hover{
+      background-color: #505050;
+  }
+h3{
+    text-align: center;
+    color: #505050;
+    margin-top: -10px;             /*기존의 위치보다 10px올립니다.*/
+  }
+.outsidelogin{
+    margin: -10px 0px;             /*margin topandbottom : -10px leftandright :0px를 주었습니다*/
+}
+.facebook{
+    width: 80px;
+    height: 30px;
+    margin: 5px 20px;              /*margin topandbottom : 5px leftandright :20px를 주었습니다*/
+    background-color: #3b5998;
+    border: none;                  /*바깥라인을 삭제했습니다*/
+    border-radius: 20%;            /*radius값을 20%주었습니다.*/
+}
+.facebook:hover{
+    background-color: #1b2842;
+    transition: 2s;                /*2초에 걸쳐서 변합니다.*/
+}
+.google{
+    width: 80px;
+    height: 30px;
+    margin: 5px 20px;              /*margin topandbottom : 5px leftandright :20px를 주었습니다*/
+    background-color: #FFF;
+    border: none;                  /*바깥라인을 삭제했습니다*/
+    border-radius: 20%;            /*radius값을 20%주었습니다.*/
+}
+.google:hover{
+    background-color: rgb(88, 88, 88);
+    transition: 2s;                /*2초에 걸쳐서 변합니다.*/
+}
+.naver{
+    width: 80px;
+    height: 30px;
+    margin: 5px 20px;              /*margin topandbottom : 5px leftandright :20px를 주었습니다*/
+    background-color: #2DB400;
+    border: none;                  /*바깥라인을 삭제했습니다*/
+    border-radius: 20%;            /*radius값을 20%주었습니다.*/
+}
+.naver:hover{
+    background-color: #126b00;
+    transition: 2s;
+}
+.apple{
+    width: 80px;
+    height: 30px;
+    margin: 5px 20px;              /*margin topandbottom : 5px leftandright :20px를 주었습니다*/
+    background-color: #FFF;
+    border: none;                  /*바깥라인을 삭제했습니다*/
+    border-radius: 20%;            /*radius값을 20%주었습니다.*/
+}
+.apple:hover{
+    background-color:#808080;
+    transition: 2s;                /*2초에 걸쳐서 변합니다.*/
+}
+
+.finder{
+    padding-left: 70px;
+    margin: 15px 25px;;            /*margin topandbottom : 15px leftandright :25px를 주었습니다*/
+    color: #404040;
+    text-decoration: none;
+}
+.gamestartbtn{
+    position: absolute;
+    left: 710px;
+    top: 810px;
+}
+.startbtn{
+    width: 470px;
+    height: 350px;
+}
+.Snslink{
+    position: absolute;
+    background-color: #d4d4d4;
+    margin: 70px 1194px;            /*margin topandbottom : 70px leftandright :1194px를 주었습니다*/
+    padding: 15px 0px;              /*padding topandbottom : 15px leftandright :0px를 주었습니다*/
+    width: 500px;
+    height: 350px;
+}
+.facelogo{
+    width: 450px;
+    height: 100px;
+    padding: 7px 25px;              /*padding topandbottom : 7px leftandright :25px를 주었습니다*/
+}
+.facelogo:hover{                      /*마우스를 올리면 배경색이 변합니다.*/
+    background: #ffffff;;
+}
+
+.instagramlogo{
+    width: 450px;
+    height: 100px;
+    padding: 7px 25px;
+}
+.instagramlogo:hover{                /*마우스를 올리면 배경색이 변합니다.*/
+    background: #ffffff;
+}
+.twitterlogo{
+    width: 450px;
+    height: 100px;
+    padding: 7px 25px;
+   
+}
+.twitterlogo:hover{                 /*마우스를 올리면 배경색이 변합니다.*/ 
+    background: #ffffff;
+}
+.story{
+    position: absolute;
+    background-color: #505050;
+    margin: 455px 194px;              /*margin topandbottom : 455px leftandright :194px를 주었습니다*/
+    width: 1500px;
+    height: 500px;
+}
+.textGS{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 20px;
+    position: absolute;
+}
+.gsplus{
+    font-size: 30px;
+    text-decoration: none;
+    float: right;
+    display: block;                  /*요소를 렌더링 하지 않도록 설정합니다.*/
+    margin: 28px 20px;               /*margin topandbottom : 28px leftandright :20px를 주었습니다*/
+    color: #303030;
+    font-weight: bolder;
+}
+.gsplus:hover{
+    color: #401be6;
+}
+.goods{
+    position: absolute;
+    background-color: #505050;
+    margin: 455px 194px;             /*margin topandbottom : 455px leftandright :194px를 주었습니다*/
+    padding: 0px 0px;
+    width: 1500px;
+    height: 500px;
+    top: 1320px;
+}
+.textGS{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 20px;
+    position: absolute;
+    color: #ffffff;
+}
+.gsplus{
+    font-size: 30px;
+    text-decoration: none;
+    float: right;
+    display: block;
+    margin: 28px 10px;                /*margin topandbottom : 28px leftandright :10px를 주었습니다*/
+    color: #ffffff;
+    font-weight: bolder;
+}
+.gsplus:hover{
+    color: #401be6;
+}
+.gsstory{
+    position: absolute;
+    padding-top: 150px;
+}
+.goodsitem{
+    position: absolute;
+    padding-top: 150px;
+}
+.story1{
+    width: 300px;
+    height: 300px;
+    margin-left: 36px;
+    /*이미지의 크기는 300*300입니다.*/ 
+}
+.story1:hover{
+    transform: scale(1.04);
+/*이미지위에 마우스를 올리면 이미지가 1.04배 확대 됩니다.(1~4번까지 동일합니다.)*/    
+}
+.story2{
+    width: 300px;
+    height: 300px;
+    margin-left: 70px;
+}
+.story2:hover{
+    transform: scale(1.04);
+}
+.story3{
+    width: 300px;
+    height: 300px;
+    margin-left: 70px;
+}
+.story3:hover{
+    transform: scale(1.04);
+}
+.story4{
+    width: 300px;
+    height: 300px;
+    margin-left: 70px;
+}
+.story4:hover{
+    transform: scale(1.04);
+}
+.textstory{
+    color: #FFFFFF;
+}
+.gamestory1{
+    position: absolute;
+    color: #ffffff;
+    top: 60px;
+    left: 35px;
+    font-weight: bolder;
+    font-size: 30px;  
+}
+.gamestory2{
+    position: absolute;
+    color: #ffffff;
+    top: 60px;
+    left: 410px;
+    font-weight: bolder;
+    font-size: 30px;  
+}
+.gamestory3{
+    position: absolute;
+    color: #ffffff;
+    top: 60px;
+    left: 790px;
+    font-weight: bolder;
+    font-size: 30px;  
+}
+.gamestory4{
+    position: absolute;
+    color: #ffffff;
+    top: 60px;
+    left: 1160px;
+    font-weight: bolder;
+    font-size: 30px;  
+}
+.goodsitem{
+    position: absolute;
+    padding-top: 150px;
+}
+.moregs{
+    font-size: 30px;
+    text-decoration: none;
+    float: right;
+    margin: 28px 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.moregs:hover{
+    color: #401be6;
+}
+.goods1{
+    width: 300px;
+    height: 300px;
+    margin-left: 36px; 
+/*이미지의 크기는 300*300입니다.*/    
+}
+.goods1:hover{               
+    transform: scale(1.04);  
+/*이미지위에 마우스를 올리면 이미지가 1.04배 확대 됩니다.(1~4번까지 동일합니다.)*/
+}
+.goods2{
+    width: 300px;
+    height: 300px;
+    margin-left: 70px;
+}
+.goods2:hover{
+    transform: scale(1.04);
+}
+.goods3{
+    width: 300px;
+    height: 300px;
+    margin-left: 70px;
+}
+.goods3:hover{
+    transform: scale(1.04);
+}
+.goods4{
+    width: 300px;
+    height: 300px;
+    margin-left: 70px;
+}
+.goods4:hover{
+    transform: scale(1.04);
+}
+.goodstext{
+    color:#ffffff;
+}
+.goodsname1{
+    position: absolute;
+    color: #ffffff;
+    top: 60px;
+    left: 30px;
+    font-weight: bolder;
+    font-size: 30px;  
+}
+.goodsname2{
+    position: absolute;
+    color: #ffffff;
+    top: 60px;
+    left: 405px;
+    font-weight: bolder;
+    font-size: 30px;  
+}
+.goodsname3{
+    position: absolute;
+    color: #ffffff;
+    top: 60px;
+    left: 785px;
+    font-weight: bolder;
+    font-size: 30px;  
+}
+.goodsname4{
+    position: absolute;
+    color: #ffffff;
+    top: 60px;
+    left: 1160px;
+    font-weight: bolder;
+    font-size: 30px;  
+}
+.footerwrap{ 
+    border-top: solid #101010;
+    border-width: 7px;
+    background: #2E2E2E; 
+    position:absolute;  
+    width:1900px; 
+    height:300px; 
+    top: 2420px;
+    left: 0px;
+}
+.text2 {
+    color: #707070;
+    font-size: 20px;
+    text-align: end;
+    margin-top: 60px;
+    margin-right: 20px;
+}
