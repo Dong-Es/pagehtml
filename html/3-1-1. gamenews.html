@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GameNews</title>
+    <link rel="stylesheet" href="highbar.css">       <!--상단바의 css를 불러옵니다.-->
+    <link rel="stylesheet" href="gamenews1.css">      <!--게임뉴스페이지의 css를 불러옵니다.-->
+    <link rel="stylesheet" href="gamenewspop.css">   <!--게임뉴스 페이지에서 사용하는 팝업창의 css를 불러옵니다.-->
+    <script src="gamenewspop.js"></script>           <!--게임뉴스 페이지에서 사용하는 javascript를 불러옵니다.-->
+    <script src="highbar.js"></script>               <!--상단바에 사용하는 javascript를 불러옵니다.-->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="Mainhome.html">
+               <button class="logobtn">StarReach</button>
+            </a>
+        </div>
+        <div id="sidebar">
+            <div class="menubtn" onclick="show()">   <!--메뉴버튼을 클릭시 사이드바를 보여줄수있도록 onclick을 추가하였습니다.-->
+            <div id="nav-icon1">                     <!--span 3개를 이용하여 메뉴 버튼을 모양을 만들었습니다.-->
+            <span class="span1"></span>
+            <span class="span1"></span>
+            <span class="span1"></span>
+        </div>
+    </div>
+        <div class="list">
+            <ul>
+                <li><a href="Mainhome.html">
+                <img class="highimg" src="ShalElogo1.jpg" alt="">
+                </a></li>
+                <span class="t10">StarReach</span>
+                <hr>
+                <li><a class="link1" href="GameNews">GameNews</a></li>
+                <hr>
+                <span class="t10">GameStory</span>
+                <hr>
+                <li><a class="link1" href="GameStory.html">Worldstory</a></li>
+                <li><a class="link1" href="GameStory.html">charcters</a></li>
+                <hr>
+                <span class="t10">GoodsShop</span>
+                <hr>
+                <li><a class="link1" href="GameGoods.html">Shopping</a></li> 
+                <hr>
+                <span class="t10">HelpCenter</span>
+                <hr>
+                <li><a class="link1" href="Support.html">HelpCenter</a></li> 
+            </ul>
+        </div>
+  </div>
+    <div class="loginbtn">
+        <a class="login" href="login.html">Login</a>
+    </div>
+    <div class="loginbtn">
+        <a class="join" href="signup.html">join</a>
+    </div>
+</div>
+</div>
+    <form class="news">
+        <p class="newstext">GameNews</p>
+        <hr class="newshr">
+         <button type="button" class="update" onclick="location.href='gamenews.html'">업데이트</button>
+         <!--버튼을 클릭시 페이지가 이동됩니다.-->
+         <button type="button" class="server" onclick="location.href='gamenews1.html'">점검</button>
+         <!--버튼을 클릭시 페이지가 이동됩니다.-->
+          <hr class="newshr3"> 
+          <a class="text1"  type='link' id="pop_link" >제목2 </a>
+          <!--팝업창을 생성하는 링크를 추가하였습니다.-->
+          <div class="pop_link">  
+          <div class="pop_wrap">
+              <div class="pop_close"><a href="#"></a></div>
+              <!--팝업창을 끄는 링크를 생성하였습니다.-->
+              <div class="newsgs1"> <!--팝업창에 생성되는 상단의 이미지입니다.-->
+                  <img class="popimg" src="ShalElogo.jpg" alt="Isolation">
+                
+<pre class="message"> <!--팝업창에 표시되는 글입니다.-->
+    <p class="mainmess">
+줄거리2
+</pre>
+ </div>
+ </div>
+ </div>
+ <hr class="newshr">
+</div>
+</div>
+<hr>
+ </div>
+</form>
+<footer class="footerwrap"> <!--하단바는 회사 정보를 알려줍니다.-->
+    <p class="text2">(주) 별빛이닿을때 대표이사 : 임동균 <br>
+    주소 : 천안시 서북구 두정동 1457 <br>
+    E-Mail : abrerop@naver.com <br>
+    전화번호 :  010-4148-5136 <br>
+    일러스트레이더 : ShalE <br>
+    -Made by LDG-
+    </p>
+  </footer>
+</body>
+</html>
