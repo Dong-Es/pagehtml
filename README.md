@@ -1,4 +1,15 @@
 # pagehtml
 <pre>
-https://github.com/Dong-Es/pagehtmlhttps://github.com/Dong-Es/pagehtmlhttps://github.com/Dong-Es/pagehtmlhttps://github.com/Dong-Es/pagehtmlhttps://github.com/Dong-Es/pagehtml
+-> 대학교 인터넷프로그래밍시간에 제작한 웹페이지 입니다.
+ 총 
+ 메인 
+ 로그인 
+ 회원가입 
+ Email/pw찾기
+ 게임뉴스2page 
+ 게임스토리
+ 센터
+ 굿즈
+ 외(기능) 상단바
+ </pre>
 21-01-26 (파일정리)
