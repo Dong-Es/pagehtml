@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StarReach</title>
+    <link rel="stylesheet" href="highbar.css">   <!--상단바에 사용되는 css를 불러옵니다.-->
+    <link rel="stylesheet" href="mainhome.css">  <!--메인 페이지에 사용되는 css를 불러옵니다.-->
+    <script src="highbar.js"></script>           <!--상단바에 사용되는 javascript를 불러옵니다.-->
+    <script src="main.js"></script>              <!--메인 페이지에 사용되는 javascript를 불러옵니다.-->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+            <a href="Mainhome.html"></a>
+               <button class="logobtn">StarReach</button>
+            </a>
+        </div>
+        <div id="sidebar">
+            <div class="menubtn" onclick="show()">   <!--메뉴버튼을 클릭시 사이드바를 보여줄수있도록 onclick을 추가하였습니다.-->
+            <div id="nav-icon1">                     <!--span을 이용하여 모양을 만들었습니다.-->
+            <span class="span1"></span>
+            <span class="span1"></span>
+            <span class="span1"></span>
+        </div>
+    </div>
+        <div class="list">                           <!--상단바의 슬라이드메뉴에 사용하는 리스트입니다.-->
+            <ul>
+                <li><a href="Mainhome.html">
+                <img class="highimg" src="ShalElogo1.jpg" alt="">
+                </a></li>
+                <span class="t10">StarReach</span>
+                <hr>
+                <li><a class="link1" href="gamenews.html">GameNews</a></li>
+                <hr>
+                <span class="t10">GameStory</span>
+                <hr>
+                <li><a class="link1" href="GameStory.html">Worldstory</a></li>
+                <li><a class="link1" href="GameStory.html">charcters</a></li>
+                <hr>
+                <span class="t10">GoodsShop</span>
+                <hr>
+                <li><a class="link1" href="GameGoods.html">Shopping</a></li> 
+                <hr>
+                <span class="t10">HelpCenter</span>
+                <hr>
+                <li><a class="link1" href="helpcenter.html">HelpCenter</a></li> 
+            </ul>
+        </div>
+  </div>  
+    <div class="loginbtn">                   <!--로그인화면으로 넘어가는 링크입니다.-->
+        <a class="login" href="login.html">Login</a>
+    </div>
+    <div class="joinbtn">                    <!--회원가입화면으로 넘어가는 링크입니다.-->
+        <a class="join" href="signup.html">join</a>
+    </div>
+</div>
+</div>
+<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <!--라디오박스에 이미지1을 저장하고 체크해둡니다.-->
+    <li class="slide-container">
+<div class="slide">
+<img id="image-id" src="shal-e-1.jpg"/>
+        </div>
+<div class="nav">
+<label for="img-5" class="prev">&#x2039;</label> <!--이전 이미지5로-->
+<label for="img-2" class="next">&#x203a;</label> <!--다음 이미지2로-->
+</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <!--라디오박스에 이미지2을 저장합니다.-->
+    <li class="slide-container">
+        <div class="slide">
+          <a href="Isolation.html"><img id="image-id" src="ISOLATION.jpg"/></a>
+        </div>
+<div class="nav">
+<label for="img-1" class="prev">&#x2039;</label> <!--이전 이미지1로-->
+<label for="img-3" class="next">&#x203a;</label> <!--다음 이미지3로-->
+</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <!--라디오박스에 이미지3을 저장합니다.-->
+    <li class="slide-container">
+        <div class="slide">
+          <img id="image-id" src="depression.jpg" />
+        </div>
+<div class="nav">
+<label for="img-2" class="prev">&#x2039;</label> <!--이전 이미지2로-->
+<label for="img-4" class="next">&#x203a;</label> <!--다음 이미지4로-->
+</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <!--라디오박스에 이미지4을 저장합니다.-->
+    <li class="slide-container">
+        <div class="slide">
+          <img id="image-id" src="Silence.jpg" />
+        </div>
+<div class="nav">
+<label for="img-3" class="prev">&#x2039;</label> <!--이전 이미지4로-->    
+<label for="img-5" class="next">&#x203a;</label> <!--다음 이미지1로-->
+</div>
+    </li>
+    <input type="radio" name="radio-btn" id="img-5" />
+    label에 이미지1저장
+    <li class="slide-container">
+        <div class="slide">
+          <img id="image-id" src="Weakness.jpg" />
+        </div>
+<div class="nav">
+<label for="img-4" class="prev">&#x2039;</label>  <!--이전 이미지4로-->
+<label for="img-1" class="next">&#x203a;</label>  <!--다음 이미지1로-->
+</div>
+    </li>
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>    <!--label에 이미지1저장-->
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>    <!--label에 이미지2저장-->
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>    <!--label에 이미지3저장-->
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>    <!--label에 이미지4저장-->
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>    <!--label에 이미지5저장-->
+    </li>
+</ul>
+
+<nav class="Menubar">  <!--메뉴바 생성-->
+    <ul>
+        <li><a href="GameNews.html">GameNews</a></li>
+        <li><a href="GameStory.html">GameStory</a></li>
+        <li><a href="GameGoods.html">Webshop</a></li>
+        <li><a href="helpcenter.html">Help</a></li>
+    </ul>
+</nav>
+ <form class="loginpod">  <!--작은 로그인 창 생성-->
+    <input class="logina" type="text" placeholder="email address">
+    <input class="logina" type="password" placeholder="password">
+    <button class="mainlogin">Login</button>
+    <a class="finder" href="signup.html">회원가입</a>
+        <a class="finder" href="findIDandPW.html">이메일/비밀번호 찾기</a>
+     </h4>
+    <h3>--------------------------- or ---------------------------</h3>
+    <div class="outsidelogin"> <!--외부 로그인 링크를 첨부한 버튼-->
+        <button class="facebook">
+            <img src="facebook.png" alt="fb">
+        </button>
+        <button class="google">
+            <img src="google.png" alt="gg">
+        </button>
+        <button class="naver">
+            <img src="naver.png" alt="nv">
+        </button>
+        <button class="apple">
+            <img src="apple.png" alt="ap">
+        </button>        
+    </div>
+</form>
+    <div class="gamestartbtn"> 
+        <a href="Mainhome.html" ><button><img class="startbtn" src="startstop.jpg" alt="startstop"
+            onmouseover="this.src = 'startstop.gif'"
+            onmouseout="this.src='startstop.jpg'" onclick="javascript:btn()"></button></a>
+            <!--onclick을 주어 효과를 추가하였습니다.-->
+    </div>
+<form class="Snslink">
+    <a href="https://www.facebook.com/"><img class="facelogo" src="facebook.jpg" alt="facebook"></a>
+    <a href="https://www.instagram.com/"><img class="instagramlogo"  src="instagram.jpeg" alt="Instagram"></a>
+    <a href="https://twitter.com/?lang=ko"><img class="twitterlogo" src="twitter.jpg" alt="twitter"></a>
+</form>
+<form class=story>
+    <p class="textGS">GameStory</p>
+    <a class="gsplus" href="Gamestory.html">더보기+</a>
+    <div class="gsstory">
+        <a href="GameStory.html">
+            <img class="story1" src="ISOLATION.jpg" alt="ISOLATION"></a>
+        <a href="GameStory.html">
+            <img class="story2" src="depression.jpg" alt="depression"></a>
+        <a href="GameStory.html">
+            <img  class="story3" src="Silence.jpg" alt="Silence"></a>
+        <a href="GameStory.html">
+            <img  class="story4" src="Weakness.jpg" alt="Weakness"></a>
+    </div>
+    <div class="textstory">
+        <h4 class="gamestory1">Isolation</h4>
+        <h4 class="gamestory2">Depression</h4>
+        <h4 class="gamestory3">Silence</h4>
+        <h4 class="gamestory4">Weakness</h4>
+    </div>
+</form>
+<form class=goods>
+    <p class="textGS">GameGoods</p>
+    <a class="moregs" href="https://smartstore.naver.com/fanding_store/category/9e060ec503c5494ab43e2d87e7b3e0df?cp=1">더보기+</a>
+    <div class="goodsitem">
+        <a href="https://smartstore.naver.com/fanding_store/products/5045661358">
+            <img class="goods1" src="굿즈1.png" alt="postcard"></a>
+        <a href="https://smartstore.naver.com/fanding_store/products/5045656806">
+            <img class="goods2" src="굿즈2.JPG" alt="lentcular"></a>
+        <a href="https://smartstore.naver.com/fanding_store/products/5045654826">
+            <img  class="goods3" src="굿즈3.JPG" alt="girptop"></a>
+        <a href="https://smartstore.naver.com/fanding_store/products/5045653300">
+            <img  class="goods4" src="굿즈4.JPG" alt="bookbinder"></a>
+    </div>
+    <div class="textgoods">
+        <h4 class="goodsname1">장패드 : 25000원 </h4>
+        <h4 class="goodsname2">렌티큘러 : 14400원 </h4>
+        <h4 class="goodsname3">그립톡 : 15000원</h4>
+        <h4 class="goodsname4">북바인더 : 25000원</h4>
+    </div>
+</form>
+<audio class src="https://www.youtube.com/watch?v=yVWt23YK2U4"></audio>
+<footer class="footerwrap">    <!--하단바에 회사에 대한 정보를 추가하는 명령어입니다.-->
+    <h2 class="text2">(주) 별빛이닿을때 대표이사 : 임동균 <br>
+      주소 : 천안시 서북구 두정동 1457 <br>
+      E-Mail : abrerop@naver.com <br>
+      전화번호 : 010-4148-5136 <br>
+      일러스트레이더 : ShalE <br>
+      -Made by LDG-
+    </h2>
+  </footer>
+</body>
+</html>
